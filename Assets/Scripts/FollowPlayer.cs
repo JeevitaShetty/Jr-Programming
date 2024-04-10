@@ -6,7 +6,7 @@ public class FollowPlayer : MonoBehaviour
 {
     [SerializeField]  GameObject player; //creating a variable for gameobject to follow
 
-    private Vector3 offset = new Vector3(0, 5, -8); //creating a vector3 offset variable, for the minimum distance to maintained
+    private Vector3 offset = new Vector3(0, 5, -7); //creating a vector3 offset variable, for the minimum distance to maintained by camera
     // Start is called before the first frame update
     void Start()
     {
