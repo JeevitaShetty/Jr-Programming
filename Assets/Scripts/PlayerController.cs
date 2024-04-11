@@ -25,9 +25,9 @@ public class PlayerController : MonoBehaviour
         
         //Move vehicle forward
        // transform.Translate(0,0,1);
-        transform.Translate(Vector3.forward * Time.deltaTime * speed); //gameobject will move 60m in z direction,
+        //transform.Translate(Vector3.forward * Time.deltaTime * speed); //gameobject will move 60m in z direction,
                                                                                //using time.delta so the frames are not dependent on eachother
-        transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
+        //transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
         //transform.Translate(Vector3.right * Time.deltaTime * horizontalInput);                                                                       
         
     }
