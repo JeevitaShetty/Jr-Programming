@@ -8,7 +8,7 @@ using System;
 public class PlayerInputManager : MonoBehaviour
 {
     public KeyCode forwardKey, backwardKey, leftKey, rightKey;
-    [SerializeField] float speed;
+    [SerializeField] float speed, turnSpeed;
     
     // Start is called before the first frame update
     void Start()
@@ -30,11 +30,13 @@ public class PlayerInputManager : MonoBehaviour
         }
         if (Input.GetKey(leftKey))
         {
-            transform.Translate(Vector3.left * Time.deltaTime * speed);
+            //transform.Translate(Vector3.left * Time.deltaTime * speed);
+            transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
         }
         if (Input.GetKey(rightKey))
         {
-            transform.Translate(Vector3.right * Time.deltaTime * speed);
+            //transform.Translate(Vector3.right * Time.deltaTime * speed);
+            transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
         }
     }
 }
